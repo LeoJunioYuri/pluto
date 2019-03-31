@@ -1,0 +1,248 @@
+body {
+}
+
+#bg-color{
+    background-color: #1A535C;
+    border: none;
+    height: 40em;
+}
+
+
+#navbarMod{
+    color: red;
+    border: none;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+
+
+
+@media only screen and (max-width: 650px) {
+  #sobre {
+    height: 80em !important;
+  }
+
+  p {
+    font-size: 1vw;
+    padding: 0px;
+  }
+}
+
+#home {
+  background-color: #1a535c;
+  color: #ff6600;
+  height: 100vh;
+  max-width: 100%;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 10vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 10px;
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+#dicas {
+  padding-top: 25px;
+  height: 50vh;
+  background-color: white;
+  max-width: 80%;
+}
+
+#frase {
+  color: #ff6600;
+  text-align: center;
+  padding: 25px;
+}
+
+.card-columns {
+  background-color:#1a535c;
+  padding:30px;
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+#sobre {
+  padding-top: 25px;
+  background-color: #1a535c;
+  color: white;
+  height: 70vh;
+}
+
+p {
+  padding: 25px;
+  font-size: 1.6em;
+}
+
+.sociais {
+  background-color: #1a535c;
+}
+
+/* Botao de ir ao topo */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* sombra ao redor */
+}
+
+/*-------Icon Pack 2-------*/
+
+.icon-pack2{   
+   padding:50px;
+  padding-left:15px;
+}
+
+.icon-pack2 ul li{
+   list-style-type:none;  
+   margin:15px;  
+   padding-right:5px;
+   display:inline-block ;
+}
+.icon-pack2 ul {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.icon-pack2 ul li a .fa {
+    font-size:30px;
+    color:#262626;
+    line-height:45px;
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+   
+} 
+.icon-pack2 ul li a {
+    position:relative;
+    margin:0 5px;
+    display:block;
+    width:45px;
+    height:45px; 
+    border-radius:2px 4px 2px 0px;
+    background-color:#eee;
+    text-align:center;
+    transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -webkit-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -moz-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -o-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -moz-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -o-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+    
+}
+.icon-pack2 ul li a:before{
+    content:"";
+    position:absolute;
+    top:5px;
+    left:-10px;
+    height:100%;
+    width:10px;
+    border-radius:2px 2px 0px 0px;
+    background-color:#b1b1b1;
+    transform:rotate(0deg) skewX(-45deg);
+    -webkit-transform:rotate(0deg) skewY(-45deg);
+    -moz-transform:rotate(0deg) skewY(-45deg);
+    -o-transform:rotate(0deg) skewY(-45deg);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+.icon-pack2 ul li a:after{
+    content:"";
+    position:absolute;
+    bottom:-10px;
+    right:5px;
+    height:10px;
+    width:100%;
+    border-radius:2px 2px 2px 0px;
+    background-color:#b1b1b1;
+    transform:rotate(0deg) skewX(-45deg);
+    -webkit-transform:rotate(0deg) skewX(-45deg);
+    -moz-transform:rotate(0deg) skewX(-45deg);
+    -o-transform:rotate(0deg) skewX(-45deg);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;  
+}
+
+.icon-pack2 ul li a:hover{
+    transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -webkit-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -moz-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -o-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -webkit-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -moz-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -o-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+}
+
+.icon-pack2 ul li:hover .fa{color:#fff;}
+.icon-pack2 ul li:hover:nth-child(1) a{
+     background-color:#3b5999;}
+.icon-pack2 ul li:hover:nth-child(2) a{
+    background:#dd4b39;}
+.icon-pack2 ul li:hover:nth-child(3) a{
+    background-color:#e4405f;}
+.icon-pack2 ul li:hover:nth-child(4) a{
+    background-color:#55acee;}
+
+.icon-pack2 ul li:hover:nth-child(1) a:before{
+     background-color:#2e4a86;}
+.icon-pack2 ul li:hover:nth-child(2) a:before{
+    background:#c13929   }
+.icon-pack2 ul li:hover:nth-child(3) a:before{
+    background-color:#d02d4c;}
+.icon-pack2 ul li:hover:nth-child(4) a:before{
+    background-color:#4184b7;}
+    
+.icon-pack2 ul li:hover:nth-child(1) a:after{
+     background-color:#4a69ad;}
+.icon-pack2 ul li:hover:nth-child(2) a:after{
+    background:#e8432f  }
+.icon-pack2 ul li:hover:nth-child(3) a:after{
+    background-color:#f1395c;}
+.icon-pack2 ul li:hover:nth-child(4) a:after{
+    background-color:#4d9bde;}
+
+.twitter-share-button {
+  box-shadow: 0 0 30px #eee;
+}
